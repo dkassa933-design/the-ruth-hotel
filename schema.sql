@@ -1,0 +1,1 @@
+CREATE TABLE IF NOT EXISTS bookings(id INTEGER PRIMARY KEY AUTOINCREMENT,name TEXT NOT NULL,email TEXT NOT NULL,phone TEXT NOT NULL,check_in TEXT NOT NULL,check_out TEXT NOT NULL,guests INTEGER NOT NULL,room_type TEXT,message TEXT,status TEXT NOT NULL DEFAULT 'new',created_at TEXT NOT NULL);CREATE INDEX IF NOT EXISTS idx_dates ON bookings(check_in,check_out);
